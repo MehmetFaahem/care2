@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import styles from './WhyChooseUs.module.css'
 
 const reasons = [
@@ -34,8 +34,6 @@ const reasons = [
 
 export function WhyChooseUs() {
   const contentRef = useRef<HTMLDivElement>(null)
-  const [isLoading, setIsLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     // Add visible class immediately to show content
