@@ -5,19 +5,19 @@ import { Services } from './components/Services'
 import { WhyChooseUs } from './components/WhyChooseUs'
 import { ContactForm } from './components/ContactForm'
 import { Hero } from './components/Hero'
+import { Navbar } from './components/Navbar'
 
 function App() {
   return (
-    <div className="app">
-      <main>
-        <Hero />
-        <About />
-        <Services />
-        <WhyChooseUs />
-        <ContactForm />
-      </main>
+    <>
+      <Navbar />
+      <Hero />
+      <About />
+      <Services />
+      <WhyChooseUs />
+      <ContactForm />
       <Footer />
-    </div>
+    </>
   )
 }
 
